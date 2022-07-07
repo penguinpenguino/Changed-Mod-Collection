@@ -7,3 +7,4 @@ Just a collection of all the mods I've made for Changed so far. Some have differ
 List
 -----
 1. [EnableConsole](https://github.com/penguinpenguino/Changed-Mod-Collection/tree/main/EnableConsole)
+2. [RichPresence](https://github.com/penguinpenguino/Changed-Mod-Collection/tree/main/RichPresence)
