@@ -1,3 +1,3 @@
 Install
 =====
-Drag EnableConsole.dll into your mod folder.
+Drag **EnableConsole.dll** into your mod folder.
