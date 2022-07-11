@@ -51,7 +51,8 @@ DWORD WINAPI MainThread(void* args) {
             if ((strcmp(Details, "Getting wet") == 0 ||
                 strcmp(Details, "Fighting the Tiger Shark") == 0 ||
                 strcmp(Details, "Fighting the Squid Dog") == 0) &&
-                MapID < POOL_5 + 0x20
+                MapID < POOL_5 + 0x20 &&
+                MapID > POOL_1
             ) {
                 if (MapID == GENERATOR) {
                     Details = "Turning the main generator";
@@ -105,13 +106,13 @@ DWORD WINAPI MainThread(void* args) {
                 State = "";
             } else if (
                 MapID == LIBRARY_PURO ||
-                MapID == MAINTENANCE_PURO ||
+                MapID == VENT_PURO ||
                 MapID == STORAGE_PURO
             ) {
                 Details = "Talking to Puro";
                 State = "";
-            } else if (MapID == MAINTENANCE_3) {
-                Details = "In the maintenance tunnels";
+            } else if (MapID == VENT_3) {
+                Details = "In the vents";
                 State = "";
             } else if (
                 MapID == STORAGE ||
@@ -163,7 +164,7 @@ DWORD WINAPI MainThread(void* args) {
                 Details = "Solving a puzzle";
                 State = "";
             } else if (
-                MapID == GROUND_FLOOR_HALL ||
+                MapID == GROUND_FLOOR_HALL &&
                 strcmp(Details, "Exploring the Dark Latex zone") == 0
             ) {
                 Details = "Making a big decision";
